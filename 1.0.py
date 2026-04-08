@@ -27,7 +27,7 @@ def ouvir_comando():
 
 def responder(comando):
     if 'codigo' in comando or 'código' in comando:
-        falar("Abrindo o Visual Studio Code")
+        falar("Abrindo o Visual Studio")
         os.system('code')
 
     elif 'navegador' in comando or 'google' in comando:
@@ -43,7 +43,7 @@ while True:
     comando = ouvir_comando()
 
     if 'rex' in comando:
-        comando = comando.replace('jarvis', '').strip()
+        comando = comando.replace('rex', '').strip()
         falar("Olá, Senhor")
         responder(comando)
 
