@@ -31,14 +31,14 @@ def responder(comando):
         os.system('code')
 
     elif 'navegador' in comando or 'google' in comando:
-        falar("Abrindo o navegador")
+        falar("Abrindo o Navegador")
         os.system('chrome')
 
-    elif 'hora' in comando:
-        from datetime import datetime
-        hora = datetime.now().strftime('%H:%M')
-        falar("Agora são {hora}")
-        
+    #SA PORRA NAO TA FUCIONANDO, SPOTIFY NOJENTO "CORRIGIR DEPOIS"
+    elif 'musicas' in comando or 'músicas' in comando:
+        falar('Abrindo o Spotify')
+        os.system('Spotify.exe')
+
 while True:
     comando = ouvir_comando()
 
